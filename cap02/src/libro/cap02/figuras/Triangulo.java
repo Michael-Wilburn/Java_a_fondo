@@ -5,6 +5,7 @@ public class Triangulo extends FiguraGeometrica{
     private double altura;
 
     public Triangulo(double b, double h){
+        super("Triangulo");
         base = b;
         altura = h;
     }

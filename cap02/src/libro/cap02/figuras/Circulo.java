@@ -4,6 +4,7 @@ public class Circulo extends FiguraGeometrica {
     private int radio;
 
     public Circulo(int r){
+        super("Circulo");
         radio = r;
     }
 
