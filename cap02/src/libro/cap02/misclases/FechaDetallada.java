@@ -11,13 +11,23 @@ public class FechaDetallada extends Fecha {
     };
 
     public String toString(){
-      return getDia()+" de "+meses[getMes()-1]+" de "+getAnio();
+        return getDia()+" de "+meses[getMes()-1]+" de "+getAnio();
     };
 
+    //invocamos al constructor del padre
+    public FechaDetallada() {
+        //invocamos al constructor de tres int pasando ceros
+        this(0,0,0);
+    }
+
+    //invocamos al constructor del padre
     public FechaDetallada(String s) {
         super(s);
     }
 
-    public FechaDetallada() {
+    //invocamos al constructor del padre
+    public FechaDetallada(int dia, int mes, int anio){
+        super(dia,mes,anio);
     }
+
 }
